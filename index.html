@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10191d"><meta name="description" content="Explore as conexões da fantasia: mitos, Tolkien, Terramar, Nárnia, D&D e os mundos que vieram depois. Uma árvore interativa com contexto, fontes e links para ler, assistir e jogar.">
+<title>Atlas da Fantasia — Uma árvore de influências</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%2310191d'/%3E%3Cpath d='M20 30V10M20 22L10 16M20 22L30 16' fill='none' stroke='%23eac786' stroke-width='2'/%3E%3Cg fill='%23eac786'%3E%3Ccircle cx='20' cy='9' r='3'/%3E%3Ccircle cx='10' cy='15' r='3'/%3E%3Ccircle cx='30' cy='15' r='3'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css"><script defer src="materials.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<header class="masthead"><a href="./" class="brand" aria-label="Atlas da Fantasia, início"><span class="brand-mark" aria-hidden="true">✦</span><span>ATLAS <span class="brand-light">DA</span> FANTASIA</span></a><span class="edition">Um mapa de influências</span></header>
+<main>
+<section class="intro"><div><p class="eyebrow">LIVROS · FILMES · SÉRIES · JOGOS</p><h1>A árvore da <em>fantasia.</em></h1><p class="lede">Os mundos se inventam. As influências se encontram.</p></div><p class="scope">Um recorte da fantasia ocidental.<br>Cada seta conta parte da história.</p></section>
+<div class="chapter-tabs" role="tablist" aria-label="Ramos da árvore">
+<button role="tab" id="tab-roots" aria-controls="tree-panel" aria-selected="true" data-chapter="roots"><span>01</span> Raízes literárias</button>
+<button role="tab" id="tab-modern" aria-controls="tree-panel" aria-selected="false" tabindex="-1" data-chapter="modern"><span>02</span> Fantasia moderna</button>
+<button role="tab" id="tab-games" aria-controls="tree-panel" aria-selected="false" tabindex="-1" data-chapter="games"><span>03</span> RPGs e videogames</button>
+</div>
+<section id="tree-panel" role="tabpanel" aria-labelledby="tab-roots" tabindex="0">
+<div class="map-heading"><div><h2 id="chapter-title">Antes dos mundos modernos</h2><p id="chapter-description">Das narrativas tradicionais à construção de novos universos.</p></div><span class="node-hint">Toque para explorar e encontrar as obras <span aria-hidden="true">↗</span></span></div>
+<div class="legend" aria-label="Legenda"><span><i class="line solid"></i> Influência</span><span><i class="line dashed"></i> Tradição cultural</span><span><i class="line dotted"></i> Adaptação ou expansão</span></div>
+<div id="tree" class="tree" aria-label="Árvore de influências"><svg id="connections" aria-hidden="true"></svg><div id="nodes" class="nodes"></div></div>
+<div class="map-note"><span aria-hidden="true">✧</span><p><strong>Uma obra pode ter muitos ancestrais.</strong> A posição organiza as conexões; não é uma escala exata de tempo. As setas mostram relações selecionadas, nunca uma origem única.</p></div>
+</section>
+<footer><p>Uma árvore aberta a outros ramos.</p><span>Seleção histórica, não um catálogo completo da fantasia mundial.</span></footer>
+</main>
+<dialog id="detail" aria-labelledby="detail-title"><button class="close" aria-label="Fechar explicação">×</button><div id="detail-content"></div></dialog>
+<div class="sr-only" id="announcement" aria-live="polite"></div>
+<noscript><p class="noscript">Ative o JavaScript para explorar a árvore. O mapa reúne as raízes literárias da fantasia, a influência de Tolkien na fantasia moderna e o encontro da literatura com Dungeons & Dragons, Warhammer e os videogames.</p></noscript>
+</body>
+</html>
